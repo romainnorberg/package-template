@@ -1,0 +1,39 @@
+{
+    "name": "romainnorberg/package-name",
+    "description": "<package-description>",
+    "keywords": [
+        "<package-keyword>"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Romainnorberg\\PackageName\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Romainnorberg\\PackageName\\Tests\\": "tests"
+        }
+    },
+    "type": "library",
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "symfony/var-dumper": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Romain Norberg",
+            "email": "romainnorberg@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
